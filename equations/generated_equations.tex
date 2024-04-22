@@ -1,0 +1,183 @@
+\subsection{0 Target Sites}
+\label{s:No_gRNA_control}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/No_gRNA_control
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}
+\end{align}
+
+\subsection{1 Target Site}
+\label{s:Single_gRNA_repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Single_gRNA_repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{2 Heterogeneous Target Sites}
+\label{s:Multiplexed_2_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multiplexed_2_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\gRna{2}}}{t} & =  \txRate{\gRna{2}}\constructGen{1} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{2}}\\
+\diff{\conc{\cplx{\cas}{2}}}{t} & =  \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{2}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{2}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{2 Identical Target Sites}
+\label{s:Multisite_2_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multisite_2_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{3 Heterogeneous Target Sites}
+\label{s:Multiplexed_3_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multiplexed_3_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\gRna{2}}}{t} & =  \txRate{\gRna{2}}\constructGen{1} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{2}}\\
+\diff{\conc{\cplx{\cas}{2}}}{t} & =  \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{2}}\\
+\diff{\conc{\gRna{3}}}{t} & =  \txRate{\gRna{3}}\constructGen{1} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{3}}\\
+\diff{\conc{\cplx{\cas}{3}}}{t} & =  \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{3}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{2}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{3}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{3 Identical Target Sites}
+\label{s:Multisite_3_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multisite_3_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{4 Heterogeneous Target Sites}
+\label{s:Multiplexed_4_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multiplexed_4_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\gRna{2}}}{t} & =  \txRate{\gRna{2}}\constructGen{1} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{2}}\\
+\diff{\conc{\cplx{\cas}{2}}}{t} & =  \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{2}}\\
+\diff{\conc{\gRna{3}}}{t} & =  \txRate{\gRna{3}}\constructGen{1} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{3}}\\
+\diff{\conc{\cplx{\cas}{3}}}{t} & =  \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{3}}\\
+\diff{\conc{\gRna{4}}}{t} & =  \txRate{\gRna{4}}\constructGen{1} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{4}}\\
+\diff{\conc{\cplx{\cas}{4}}}{t} & =  \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{4}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{2}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{3}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{4}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{4 Identical Target Sites}
+\label{s:Multisite_4_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multisite_4_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{5 Heterogeneous Target Sites}
+\label{s:Multiplexed_5_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multiplexed_5_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\gRna{2}}}{t} & =  \txRate{\gRna{2}}\constructGen{1} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{2}}\\
+\diff{\conc{\cplx{\cas}{2}}}{t} & =  \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{2}}\\
+\diff{\conc{\gRna{3}}}{t} & =  \txRate{\gRna{3}}\constructGen{1} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{3}}\\
+\diff{\conc{\cplx{\cas}{3}}}{t} & =  \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{3}}\\
+\diff{\conc{\gRna{4}}}{t} & =  \txRate{\gRna{4}}\constructGen{1} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{4}}\\
+\diff{\conc{\cplx{\cas}{4}}}{t} & =  \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{4}}\\
+\diff{\conc{\gRna{5}}}{t} & =  \txRate{\gRna{5}}\constructGen{1} - \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{5}}\\
+\diff{\conc{\cplx{\cas}{5}}}{t} & =  \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{5}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{2}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{3}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{4}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{5}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{5 Identical Target Sites}
+\label{s:Multisite_5_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multisite_5_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{6 Heterogeneous Target Sites}
+\label{s:Multiplexed_6_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multiplexed_6_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\gRna{2}}}{t} & =  \txRate{\gRna{2}}\constructGen{1} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{2}}\\
+\diff{\conc{\cplx{\cas}{2}}}{t} & =  \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{2}}\\
+\diff{\conc{\gRna{3}}}{t} & =  \txRate{\gRna{3}}\constructGen{1} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{3}}\\
+\diff{\conc{\cplx{\cas}{3}}}{t} & =  \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{3}}\\
+\diff{\conc{\gRna{4}}}{t} & =  \txRate{\gRna{4}}\constructGen{1} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{4}}\\
+\diff{\conc{\cplx{\cas}{4}}}{t} & =  \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{4}}\\
+\diff{\conc{\gRna{5}}}{t} & =  \txRate{\gRna{5}}\constructGen{1} - \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{5}}\\
+\diff{\conc{\cplx{\cas}{5}}}{t} & =  \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{5}}\\
+\diff{\conc{\gRna{6}}}{t} & =  \txRate{\gRna{6}}\constructGen{1} - \gRnaBind{}\conc{\gRna{6}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{6}}\\
+\diff{\conc{\cplx{\cas}{6}}}{t} & =  \gRnaBind{}\conc{\gRna{6}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{6}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{2}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{3}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{4}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{5}}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{6}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{2}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{3}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{4}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{5}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{6}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
+\subsection{6 Identical Target Sites}
+\label{s:Multisite_6_gRNA_Repression}
+% Equations generated from http://bbn.com/apt-dcas9-regulation/Multisite_6_gRNA_Repression
+
+\begin{align}
+\diff{\constructGen{2}}{t} & = - \dilutionRate{}\constructGen{2}\\
+\diff{\conc{\gRna{1}}}{t} & =  \txRate{\gRna{1}}\constructGen{1} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \rnaDegradeRate{}\conc{\gRna{1}}\\
+\diff{\conc{\cplx{\cas}{1}}}{t} & =  \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}} - \dilutionRate{}\conc{\cplx{\cas}{1}}\\
+\diff{\conc{\proSp{\cas{}}}}{t} & =  \txtlRate{\proSp{\cas{}}}\constructGen{2} - \dilutionRate{}\conc{\proSp{\cas{}}} - \gRnaBind{}\conc{\gRna{1}}\conc{\proSp{\cas{}}}\\
+\diff{\conc{\proSp{\gfp}}}{t} & =  \txtlRate{\proSp{\gfp}}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\frac{(K_R)^n}{(K_R)^n + \conc{\cplx{\cas}{1}}^n}\constructGen{2} - \dilutionRate{}\conc{\proSp{\gfp}}\\
+\diff{\constructGen{1}}{t} & = - \dilutionRate{}\constructGen{1}
+\end{align}
+
