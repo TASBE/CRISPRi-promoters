@@ -1,7 +1,10 @@
 # Mechanistic Modeling of CRISPRi/CRISPRa
 
 This repository contains supplementary information for the paper: 
-> XXX
+> Scott, Helen, Alessandro Occhialini, Scott C. Lenaghan, and Jacob Beal. 2024.
+"Simulations Predict Stronger CRISPRi Transcriptional Repression in Plants for
+Identical than Heterogeneous Target Sites." bioRxiv.
+https://doi.org/10.1101/2024.04.22.590637
 
 If you make use of any of the contents of this repository, please cite this paper.
 
