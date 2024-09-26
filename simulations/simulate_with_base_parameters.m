@@ -142,11 +142,11 @@ set(gca, 'xticklabel', xLabs)
 xtickangle(90)
 
 % Key for colors
-legendLabels = {'1 Binding Site', 'Heterogenous Target Sites', 'Identical Target Sites', 'Minimum and Maximum Fold Repression'};
-legendColors = {lightGreen, darkGreen, gold, orange};
+legendLabels = {'1 Target Site', 'Heterogenous Target Sites', 'Identical Target Sites'};
+legendColors = {lightGreen, darkGreen, gold};
 
 legendX = 0.75;
-legendYStart = 160;
+legendYStart = 85;
 yOffset = 15;
 
 for i = 1:length(legendLabels)
