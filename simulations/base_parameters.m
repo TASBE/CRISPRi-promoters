@@ -13,7 +13,7 @@ parameters('alpha_r_gRNA4') = parameters('alpha_r_gRNA2');
 parameters('alpha_r_gRNA5') = parameters('alpha_r_gRNA2');
 parameters('alpha_r_gRNA6') = parameters('alpha_r_gRNA2');
 parameters('alpha_p_GFP') = 10^(5.5793); % Molecules/hour; Fit to the 2023-03-14 timecourse
-parameters('alpha_p_dCas9') = 10^(2.0415); % Molecules/hour; Taken from NIH-CRISPR
+parameters('alpha_p_dCas9') = 10^(3.0415); % Molecules/hour; Taken from NIH-CRISPR
 
 % Degradation/dilution parameters
 parameters('delta_g') = 10^(0.0003); % Fraction/hour; Taken from NIH-CRISPR; assuming identical for all gRNAs
