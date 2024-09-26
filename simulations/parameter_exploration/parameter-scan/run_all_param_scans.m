@@ -41,19 +41,19 @@ for i = 1:n_models
     % Print the model name to keep track of progress
     disp(strcat("Currently on: ", models{i}))
 
-%     % Add model specific variables to the parameter scan
-%     for j = 1:length(models{i, MODEL_PARAMS})
-%         parametersToScan(models{i, MODEL_PARAMS}(j)) = [2 2];
-%     end
-% 
-%     % Call function to preform scan
-%     scanParameters(models(i, :), v1Levels, tspan, parameters, parametersToScan, outpath)
-%     
-%     % Call function to calcuate fold repression
-%     calculateFoldRepression(models(i, :), parametersToScan, outpath)
-%     
-%     % Call function to make double rainbow plots
-%     plotMEFL(models(i, :), parameters, parametersToScan, outpath)
+    % Add model specific variables to the parameter scan
+    for j = 1:length(models{i, MODEL_PARAMS})
+        parametersToScan(models{i, MODEL_PARAMS}(j)) = [2 2];
+    end
+
+    % Call function to preform scan
+    scanParameters(models(i, :), v1Levels, tspan, parameters, parametersToScan, outpath)
+    
+    % Call function to calcuate fold repression
+    calculateFoldRepression(models(i, :), parametersToScan, outpath)
+    
+    % Call function to make double rainbow plots
+    plotMEFL(models(i, :), parameters, parametersToScan, outpath)
 
     % Call function to make rainbow plot
     plotFoldRepression(models(i, :), parameters, parametersToScan, outpath)
