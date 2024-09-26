@@ -49,11 +49,11 @@ function dx=diff_eq(t, x, parameters, species_names)
 
     % Compute derivative for each species
     d_V2 = - lambda*sp.V2;
-	d_gRNA1 =  alpha_r_gRNA1*sp.V1 - Cas_gRNA_binding*sp.gRNA1*sp.dCas9 - delta_g*sp.gRNA1 - lambda*sp.gRNA1;
+	d_gRNA1 =  alpha_r_gRNA1*sp.V1 - Cas_gRNA_binding*sp.gRNA1*sp.dCas9 - delta_g*sp.gRNA1;
 	d_dCas9_gRNA1 =  Cas_gRNA_binding*sp.gRNA1*sp.dCas9 - lambda*sp.dCas9_gRNA1;
-	d_gRNA2 =  alpha_r_gRNA2*sp.V1 - Cas_gRNA_binding*sp.gRNA2*sp.dCas9 - delta_g*sp.gRNA2 - lambda*sp.gRNA2;
+	d_gRNA2 =  alpha_r_gRNA2*sp.V1 - Cas_gRNA_binding*sp.gRNA2*sp.dCas9 - delta_g*sp.gRNA2;
 	d_dCas9_gRNA2 =  Cas_gRNA_binding*sp.gRNA2*sp.dCas9 - lambda*sp.dCas9_gRNA2;
-	d_gRNA3 =  alpha_r_gRNA3*sp.V1 - Cas_gRNA_binding*sp.gRNA3*sp.dCas9 - delta_g*sp.gRNA3 - lambda*sp.gRNA3;
+	d_gRNA3 =  alpha_r_gRNA3*sp.V1 - Cas_gRNA_binding*sp.gRNA3*sp.dCas9 - delta_g*sp.gRNA3;
 	d_dCas9_gRNA3 =  Cas_gRNA_binding*sp.gRNA3*sp.dCas9 - lambda*sp.dCas9_gRNA3;
 	d_dCas9 =  alpha_p_dCas9*sp.V2 - Cas_gRNA_binding*sp.gRNA1*sp.dCas9 - Cas_gRNA_binding*sp.gRNA2*sp.dCas9 - Cas_gRNA_binding*sp.gRNA3*sp.dCas9 - lambda*sp.dCas9;
 	d_GFP =  alpha_p_GFP*(K_R^n)/(K_R^n + (sp.dCas9_gRNA1)^n)*(K_R^n)/(K_R^n + (sp.dCas9_gRNA2)^n)*(K_R^n)/(K_R^n + (sp.dCas9_gRNA3)^n)*sp.V2 - lambda*sp.GFP;
