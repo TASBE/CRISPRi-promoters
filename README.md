@@ -55,3 +55,7 @@ The resulting MATLAB models we generated are saved in the `models/` directory.
 ### Generating Figures from the Paper
 #### SI Figure 2 (Parameter Scan)
 In `simulations/parameter_exploration/parameter-scan` run the `run_all_param_scans.m` file. All individual plot files are saved in the model-specific subfolders of the `simulations/parameter_exploration/parameter-scan/results` directory. The fold repression plots can then be composed together into a multi-panel figure in power point.
+#### SI Figure 3 (Trajectories of random perturbation changes)
+1. In `simulations/parameter_exploration` run the `random_exploration.m` script. Note: this may take a while (on a typical laptop it took ~40 min).
+2. In `simulations/parameter_exploration` run the `random_exploration_plots.m` script. Individual figures are saved in the model-specific subfolders of the `simulations/parameter_exploration/random-perturbation-results` directory.
+3. The plots can then be composed together into a multi-panel figure in power point.
