@@ -51,3 +51,7 @@ The resulting LaTeX equations we generated are saved in `equations/generated_equ
 The routines for generating MATLAB code from SBOL circuits are in `sbol/matlab_generation.py`.
 Import the module and run via a script like `sbol/sbol_to_matlab.py`.
 The resulting MATLAB models we generated are saved in the `models/` directory.
+
+### Generating Figures from the Paper
+#### SI Figure 2 (Parameter Scan)
+In `simulations/parameter_exploration/parameter-scan` run the `run_all_param_scans.m` file. All individual plot files are saved in the model-specific subfolders of the `simulations/parameter_exploration/parameter-scan/results` directory. The fold repression plots can then be composed together into a multi-panel figure in power point.
