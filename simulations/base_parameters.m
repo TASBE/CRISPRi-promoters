@@ -22,7 +22,7 @@ parameters('lambda') = 10^(-1.6225); % Fraction/hour; Fit to the 2023-03-14 time
 % dCas9 activation/repression mechanism parameters
 parameters('Cas_gRNA_binding') = 10^(-4.2577);  % Taken from NIH-CRISPR
 parameters('K_A') = 2.34 * 10^6; % Used in NIH-CRISPR, from Calin Belta paper; Cannot be readily modulated
-parameters('K_R') = 10^4; % Hypothesized; Adjusted to give expected fold repression value (4)
+parameters('K_R') = 10^3.95; % Hypothesized; Adjusted to give expected fold repression value (4)
 parameters('n') = 0.92; % Used in NIH-CRISPR, from Calin Belta paper; Cannot be readily modulated
 
 % Initial delay
