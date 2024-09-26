@@ -53,6 +53,8 @@ Import the module and run via a script like `sbol/sbol_to_matlab.py`.
 The resulting MATLAB models we generated are saved in the `models/` directory.
 
 ### Generating Figures from the Paper
+#### Figure 3 A and B (Simulate with Base Parameters)
+In `simulations` tun the `simulate_with_base_parameters.m` script. The plots will be saved in `simulations/plots`. Note: the example line in the legend for the 2 heterogeneous and 2 identical target site models was added in powerpoint as it it not a line type native to MATLAB.
 #### SI Figure 2 (Parameter Scan)
 In `simulations/parameter_exploration/parameter-scan` run the `run_all_param_scans.m` file. All individual plot files are saved in the model-specific subfolders of the `simulations/parameter_exploration/parameter-scan/results` directory. The fold repression plots can then be composed together into a multi-panel figure in power point.
 #### SI Figure 3 (Trajectories of random perturbation changes)
